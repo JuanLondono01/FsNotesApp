@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
+
+:root {
+    --primary: #0b31be;
+    --secondary: #2e47ce;
+    --white: #ffffff;
+    --buttons: #515ddf;
+    --color4: #7473ef;
+    --color5: #9789ff;
+}
+
+.reg-title{
+	color: #0b31be;
+	font-weight: lighter;
+}
+
+.form-container {
+	display: flex;
+	position: relative;
+	top: 2rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	border: 1px solid rgb(53, 169, 214);
+	border-radius: 10px;
+	background-color: rgba(53, 169, 214, 0.71);
+	width: 400px;
+	height: 75vh;
+	margin-inline: auto;
+	backdrop-filter: blur(3px);
+}
+.input {
+	width: 90%;
+	color: red;
+}
+.login-link {
+	text-decoration: none;
+    font-weight: bold;
+}

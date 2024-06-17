@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --primary: #0b31be;
+    --secondary: #2e47ce;
+    --white: #ffffff;
+    --buttons: #515ddf;
+    --color4: #7473ef;
+    --color5: #9789ff;
+}
+
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.notes-container {
+    height: max-content;
+    display: grid;
+    width: 98%;
+    border: 1px solid white;
+    margin-top: 2rem;
+    margin-inline: auto;
+    border-radius: 5px;
+    padding: 0 15px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.notes-title {
+    color: var(--white);
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.note-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.create-n {
+    position: relative;
+    right: -64rem;
+    top: -2.2rem;
+}
+
+.modal{
+    border-radius: 5px;
+}
+
+.notes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.Note{
+    border: 1px solid var(--color5);
+    background: var(--secondary);
+    height: 150px;
+    display: flex;flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.note-title{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.note-body{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.del-icon{
+    position: relative;
+    left: -11rem;
+    cursor: pointer;
+}
+
+.ed-icon{
+    position: relative;
+    top: -25px;
+    right: -11rem;
+    cursor: pointer;
+}
+
+.Important{
+    border: 1px solid var(--color5);
+    background: var(--white);
+    height: 150px;
+    display: flex;flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Important .note-title{
+    color: var(--primary);
+}
+
+.Important .note-body{
+    color: var(--primary);
+}
+
+
+.Important .ed-icon{
+    color: var(--primary);
+}

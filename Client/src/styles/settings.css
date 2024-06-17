@@ -1,0 +1,23 @@
+
+
+
+
+.name{
+    text-transform: capitalize;
+    text-align: center;
+	letter-spacing: 3px;
+	color: var(--primary);
+	font-size: 2.5rem;
+}
+
+.settings-container{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 100px;
+	gap: 5px;
+	margin-inline: auto;
+    margin-top: 1rem;
+}

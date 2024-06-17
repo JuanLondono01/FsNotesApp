@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	margin: 0%;
+	margin-bottom: 0%;
+}
+
+body{
+    background-image: url('../static/bga.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main-title{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 4rem;
+    color: white;
+    animation: bounce 1s  ;
+    border-bottom: 1px solid white;
+    width: max-content;
+    margin-inline: auto;
+    position: relative;
+    filter: drop-shadow(10px 0px 5px black);
+}
+
+@keyframes bounce {
+0%{
+    top: 0;
+}
+
+25%{
+    top: 20px;
+}
+
+50%{
+    top: -30px;
+}
+
+100%{
+    top: 0;
+}
+}
